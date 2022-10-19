@@ -1,0 +1,19 @@
+import java.util.Date;
+import java.text.DateFormat;
+import java.util.Locale;
+
+class  Date_Formatting
+{
+	public static void main(String[] args) 
+	{ 
+Date obj1=new Date();
+
+
+
+df=DateFormat.getDateInstance(DateFormat.SHORT,Locale.UK);
+String str3=df.format(obj1);
+
+
+		System.out.println(str3);
+	}
+}
