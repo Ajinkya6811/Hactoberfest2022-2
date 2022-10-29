@@ -17,6 +17,7 @@ String str3=df.format(obj1);
 
 
 		System.out.println(str1);
+		System.out.println(str2);
 		System.out.println(str3);
 	}
 }
