@@ -8,7 +8,7 @@ int main(){
 
   int opt;
 
-  cout << "Figure Option : \n 1) Circle \n 2) Square \n 3) Triangle \n 4) Rectangle \n 5) Parallelogram \n";
+  cout << "Figure Option : \n 1) Circle \n 2) Square \n 3) Triangle \n 4) Rectangle \n 5) Parallelogram \n 6) Rhombus \n";
   cout << "Insert your choice below : ";
   cin >> opt;
 
@@ -70,6 +70,19 @@ int main(){
 
     area = b*h;
     circumference = 2*(b+s);
+
+  } else if(opt == 6){
+    float s,d1,d2;
+
+    cout << "\n=== RHOMBUS ===\n side : ";
+    cin >> s;
+    cout << " diagonal 1 : ";
+    cin >> d1;
+    cout << " diagonal 2 : ";
+    cin >> d2;
+
+    area = (d1*d2)/2;
+    circumference = 4*s;
 
   } else {
     cout << "\nlooks like you choose the wrong option :((\n ";
