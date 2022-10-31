@@ -8,7 +8,7 @@ int main(){
 
   int opt;
 
-  cout << "Figure Option : \n 1) Circle \n 2) Square \n 3) Triangle \n 4) Rectangle \n";
+  cout << "Figure Option : \n 1) Circle \n 2) Square \n 3) Triangle \n 4) Rectangle \n 5) Parallelogram \n";
   cout << "Insert your choice below : ";
   cin >> opt;
 
@@ -57,6 +57,19 @@ int main(){
 
     area = w*l;
     circumference = 2*(w+l);
+
+  } else if(opt == 5){
+    float b,h,s;
+
+    cout << "\n=== PARALLELOGRAM ===\n base : ";
+    cin >> b;
+    cout << " height : ";
+    cin >> h;
+    cout << " skew side : ";
+    cin >> s;
+
+    area = b*h;
+    circumference = 2*(b+s);
 
   } else {
     cout << "\nlooks like you choose the wrong option :((\n ";
