@@ -8,7 +8,7 @@ int main(){
 
   int opt;
 
-  cout << "Figure Option : \n 1) Circle \n 2) Square \n 3) Triangle \n 4) Rectangle \n 5) Parallelogram \n 6) Rhombus \n";
+  cout << "Figure Option : \n 1) Circle \n 2) Square \n 3) Triangle \n 4) Rectangle \n 5) Parallelogram \n 6) Rhombus \n 7) Trapezoid \n";
   cout << "Insert your choice below : ";
   cin >> opt;
 
@@ -59,17 +59,17 @@ int main(){
     circumference = 2*(w+l);
 
   } else if(opt == 5){
-    float b,h,s;
+    float b,h,d;
 
     cout << "\n=== PARALLELOGRAM ===\n base : ";
     cin >> b;
     cout << " height : ";
     cin >> h;
-    cout << " skew side : ";
-    cin >> s;
+    cout << " diagonal : ";
+    cin >> d;
 
     area = b*h;
-    circumference = 2*(b+s);
+    circumference = 2*(b+d);
 
   } else if(opt == 6){
     float s,d1,d2;
@@ -83,6 +83,21 @@ int main(){
 
     area = (d1*d2)/2;
     circumference = 4*s;
+
+  } else if(opt == 7){
+    float b,h,u,d;
+
+    cout << "\n=== TRAPEZOID ===\n base : ";
+    cin >> b;
+    cout << " height : ";
+    cin >> h;
+    cout << " upside : ";
+    cin >> u;
+    cout << " diagonal : ";
+    cin >> d;
+
+    area = (b+u)*h/2;
+    circumference = b+h+u+d;
 
   } else {
     cout << "\nlooks like you choose the wrong option :((\n ";
